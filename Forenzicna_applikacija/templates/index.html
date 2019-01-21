@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Poišči storilca{% endblock title %}
+
+{% block specifika %}
+
+    <div class="container-fluid" id="ponudba">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="naslov">
+                    Poišči storilca
+                </div>
+                <div class="col-6">
+                    <div class="row" id="text">
+                        <div class="">
+                            <p>V spodnje polje vnesi DNA osumljenca za primerjavo vzorcev v bazi.</p>
+                            <form method="post">
+                                <textarea id="dna" name="dna" rows="8" style="font-size: 0.8em; width: 100%">Vnesi DNA kodo osumljenca</textarea>
+
+                                <!--<input type="text" placeholder="Vnesi DNA kodo" id="dna" name="dna" />-->
+                                <button type="submit">Preveri</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6">
+                    <div class="row" id="slika">
+                        <div class="slika">
+                            <p>Za lažje preverjanje lahko DNA kodo skopiraš tu:</p>
+
+                            <textarea id="p1" rows="10" style="font-size: 0.5em; width: 100%;">ACAAGATGCCATTGTCCCCCGGCCTCCTGCTGCTGCTGCTCTCCGGGGCCACGGCCACCGCTGCCCTGCCCCTGGAGGGTGGCCCCACCGGCCGAGACAGCGAGCATATGCAGGAAGCGGCAGGAATAAGGAAAAGCAGCCTCCTGACTTTCCTCGCTTGGTGGTTTGAGTGGACCTCCCAGGCCAGTGCCGGGCCCCTCATAGGAGAGGAAGCTCGGGAGGTGGCCAGGCGGCAGGAAGGCGCACCCCCCCAGCAATCCGCGCGCCGGGACAGAATGCCCTGCAGGAACTTCTTCTGGAAGACCTTCTCCTCCTGCAAATAAAACCTCACCCATGAATGCTCACGCAAGTTTAATTACAGACCTGAA</textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+
+{% endblock specifika %}

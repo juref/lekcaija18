@@ -4,7 +4,6 @@
 
 import os
 import random
-
 import jinja2
 import webapp2
 
@@ -40,8 +39,6 @@ mesto = country_capital_dict.get(drzava)
 
 drzava_in = {"drzava": drzava}
 
-print drzava
-print mesto
 
 class MainHandler(BaseHandler):
     def get(self):
@@ -51,7 +48,6 @@ class MainHandler(BaseHandler):
         secret = mesto
         guess = self.request.get("guess")
 
-
         if secret.lower() == guess.lower():
             message = "<b>Bravo! Odgovor je pravilen!</b>"
         else:
@@ -60,8 +56,6 @@ class MainHandler(BaseHandler):
         params = {"message": message}
 
         return self.render_template("odgovor.html", params=params)
-
-
 
 
 app = webapp2.WSGIApplication([
