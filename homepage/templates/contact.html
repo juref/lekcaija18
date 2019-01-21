@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block title %}Naroči se{% endblock title %}
+
+{% block specifika %}
+            <div class="container-fluid" id="narocilo">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12" id="naslov">
+                            Naroči se!
+                        </div>
+                        <div class="col-lg-6" id="center">
+                            <div class="container"></div>
+                            <!-- <div class="row"> -->
+                            Ime in priimek
+                            <br/>
+                            <input type="text" id="ime" name="imeInPriimek">
+                            Telefonska številka
+                            <br/>
+                            <input type="number" id="telefon" name="telefon">
+                            Dan
+                            <br/>
+                            <select id="dan" name="dan">
+                                <option value="ponedeljek">Ponedeljek</option>
+                                <option value="torek">Torek</option>
+                                <option value="sreda">Sreda</option>
+                                <option value="cetrtek">Četrtek</option>
+                                <option value="petek">Petek</option>
+                                <option value="sobota">Sobota</option>
+                            </select>
+                            Vaše sporočilo
+                            <br/>
+                            <input type="text-area" id="sporocilo" name="sporocilo">
+                            <input type="button" id="poslji" value="Pošlji" onclick="msg()">
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="col-lg-6" id="center">
+                            <div class="container">
+                                <table class="table table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Dan</th>
+                                            <th scope="col">Deloni čas</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Ponedeljek</td>
+                                            <td>8:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Torek</td>
+                                            <td>8:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sreda</td>
+                                            <td>8:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Četrtek</td>
+                                            <td>8:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Petek</td>
+                                            <td>8:00 - 22:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sobota</td>
+                                            <td>11:00 - 20:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nedelja</td>
+                                            <td>Zaprto</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>* Delovni čas velja od 1. 1. 2018 do preklica oz. objave novega</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="push"></div>
+    </div>
+    {% endblock specifika %}

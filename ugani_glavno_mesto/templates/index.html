@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Ugani glavno mesto{% endblock title %}
+
+{% block specifika %}
+    <div class="container-fluid" id="ponudba">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="naslov">
+                    Ugani glavno mesto države {{ drzava }}
+                </div>
+                <div class="col-6">
+                    <div class="row" id="text">
+                        <div class="">
+                            <p>{{ drzava }} ima za prestolnico mesto, ki  je na sliki desno.</p>
+                            <p>Spodaj vpiši katero mesto je to!
+                            </p>
+                            <form method="post">
+                                <input type="text" placeholder="Vnesi ime mesta" id="guess" name="guess" />
+                                <button type="submit">Preveri</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-6">
+                    <div class="row" id="slika">
+                        <div class="slika">
+                            <img id="prestolnica" src="assets/img/{{ drzava }}.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+
+{% endblock specifika %}

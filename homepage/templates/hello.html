@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Frizerstvo Mirko{% endblock title %}
+
+{% block specifika %}
+    <div class="container-fluid" id="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div
+                        class="d-block w-100"
+                        style="background-image: url(https://www.barnsdalehotel.co.uk/wp-content/uploads/2018/05/Hairdressing-at-Barnsdale.jpg); background-size: cover; background-position: center;"
+                        alt="First slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        class="d-block w-100"
+                        style="background-image: url(https://www.lorealparis.com.au/-/media/frizzy-hair-1920x823_ok.ashx); background-size: cover; background-position: center;"
+                        alt="Second slide"></div>
+                </div>
+                <div class="carousel-item">
+                    <div
+                        class="d-block w-100"
+                        style="background-image: url(https://lamodehairandbeauty.com.au/wp-content/uploads/La-Mode-Hair-and-Beauty-Home-Slide04.jpg); background-size: cover; background-position: center;"
+                        alt="Third slide"></div>
+                </div>
+            </div>
+            <a
+                class="carousel-control-prev"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a
+                class="carousel-control-next"
+                href="#carouselExampleIndicators"
+                role="button"
+                data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <div class="container-fluid" id="ponudba">
+        <div class="container">
+            <div class="row">
+                <div class="col-12" id="naslov">
+                    Lorem Ipsum Dolor
+                </div>
+                <div class="col-12">
+                    <div class="row" id="">
+                        <div class="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis
+                                tortor tincidunt, mollis nibh vitae, convallis quam. Cras sit amet vestibulum
+                                nisi. Suspendisse mattis nibh non laoreet suscipit. Vestibulum sit amet diam
+                                nulla. Donec finibus ornare tincidunt. Integer sollicitudin mollis enim. Nam in
+                                feugiat ligula, sed porttitor diam. Ut a velit mattis, vulputate lacus ac,
+                                egestas tortor. Curabitur ut venenatis lectus. Suspendisse nisl metus, porttitor
+                                sit amet felis vel, ornare mollis mi. Praesent viverra erat at massa
+                                scelerisque, a cursus nibh pharetra. Aliquam accumsan laoreet eros auctor
+                                fermentum. Duis pulvinar nulla eget mauris vestibulum dictum. Morbi et bibendum
+                                mauris. Nunc posuere, odio pharetra molestie convallis, mi risus dignissim
+                                tortor, ac porttitor tortor elit in odio. Aenean eget sapien non neque tincidunt
+                                semper et ac lectus. Aliquam id erat magna. Donec sagittis id massa sed ornare.
+                                Mauris varius dolor eu orci consequat tempus sed eget dolor. Vivamus pulvinar
+                                dolor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+
+{% endblock specifika %}
