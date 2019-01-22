@@ -22,10 +22,17 @@
 
         </div>
     <script type="text/javascript">
-        $("#p1").click(function(){
-        $(this).select();
-        document.execCommand('copy');
-        });
 
+    // Select all text area on click //
+        $("#dna").click(function(){
+            $(this).select();
+            document.execCommand('copy');
+        });
+    
+    // Copy all text in text area to clipboard //
+        $("#clipboard").click(function () {
+            $("#dna").select();
+            document.execCommand('copy');
+        });
     </script>
     </body>
