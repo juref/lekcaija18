@@ -15,8 +15,9 @@ html {
     max-width: 100%;
     width: auto;
 }
-#text {
-    padding-right: 35px;
+.slika {
+    padding-top: 35px;
+    color: #767676;
 }
 .push {
     height: 225px;
@@ -33,6 +34,8 @@ html {
 }
 .container {
     background-color: inherit;
+    width: 350px;
+    padding: auto;
 }
 .dropdown-menu {
     background-color: #e0e1e2;
