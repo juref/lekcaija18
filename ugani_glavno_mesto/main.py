@@ -50,6 +50,7 @@ class MainHandler(BaseHandler):
         secret =self.request.get("mesto")
         guess = self.request.get("guess")
 
+
         if secret.lower() == guess.lower():
             message = "<b>Bravo! Odgovor je pravilen!</b>"
             class_from_main = "right"
