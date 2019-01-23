@@ -11,14 +11,6 @@ import webapp2
 template_dir = os.path.join(os.path.dirname(__file__), "templates")
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=False)
 
-country_capital_dict = {"Slovenija": "Ljubljana", "Hrvaska": "Zagreb", "Avstrija": "Dunaj", "Italija": "Rim"}
-
-random_num = random.randint(0, 3)
-drzava = country_capital_dict.keys()[random_num]
-mesto = country_capital_dict.get(drzava)
-
-drzava_in = {"drzava": drzava}
-
 
 class BaseHandler(webapp2.RequestHandler):
 
@@ -39,12 +31,23 @@ class BaseHandler(webapp2.RequestHandler):
         return self.response.out.write(template.render(params))
 
 
+country_capital_dict = {"Slovenija": "Ljubljana", "Hrvaska": "Zagreb", "Avstrija": "Dunaj", "Italija": "Rim"}
+
+
+
+
 class MainHandler(BaseHandler):
     def get(self):
+        random_num = random.randint(0, 3)
+        drzava = country_capital_dict.keys()[random_num]
+        mesto = country_capital_dict.get(drzava)
+
+        drzava_in = {"drzava": drzava, "mesto": mesto}
+
         return self.render_template("index.html", params=drzava_in)
 
     def post(self):
-        secret = mesto
+        secret =self.request.get("mesto")
         guess = self.request.get("guess")
 
         if secret.lower() == guess.lower():
