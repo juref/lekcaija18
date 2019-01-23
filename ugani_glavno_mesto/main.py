@@ -50,10 +50,14 @@ class MainHandler(BaseHandler):
 
         if secret.lower() == guess.lower():
             message = "<b>Bravo! Odgovor je pravilen!</b>"
+            class_from_main = "right"
         else:
-            message = "<p style='color: red;'>Narobe, " + str(guess.title()) + " ni pravilen odgvor.</p>"
+            message = "Narobe, " + str(guess.title()) + " ni pravilen odgvor.</p>"
+            class_from_main = "wrong"
 
-        params = {"message": message}
+        params = {"message": message,
+                  "class_from_main": class_from_main,
+                  }
 
         return self.render_template("odgovor.html", params=params)
 

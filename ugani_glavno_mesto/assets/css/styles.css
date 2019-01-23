@@ -3,64 +3,46 @@ html {
     height: 100%;
     margin: 0;
 }
-
-#footer {
-    height: 225px;
-    background-color: #18314a;
-    color: #ffffff;
-    padding-top: 60px;
-    padding-bottom: 30px;
-}
-#prestolnica {
-    max-width: 100%;
-    width: auto;
-}
-#text {
-    padding-right: 35px;
-}
-.push {
-    height: 225px;
+body,
+html {
+    height: 100%;
+    margin: 0;
 }
 .wrapper {
     min-height: 100%;
-
-    /* Equal to height of footer */
-    /* But also accounting for potential margin-bottom of last child */
-    margin-bottom: -225px;
 }
-.container-fluid#menu {
-    background-color: #a1bbc3;
-}
-.container {
-    background-color: inherit;
-}
-.dropdown-menu {
-    background-color: #e0e1e2;
-}
-.d-block.w-100 {
-    height: 450px;
-}
-.container-fluid#slider {
-    margin: 0;
-    padding: 0;
-}
-.storitev {
-    margin-bottom: 25px;
-}
-.space {
-    flex-grow: 1;
-}
-#navbarSupportedContent,
-.navbar-brand a {
-    flex-grow: 0;
-}
-.navbar {
-    padding-left: 0;
-    padding-right: 0;
-}
-#faq,
-#ponudba {
+.right {
+    background-image: url("../img/conffeti.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: green;
     padding-bottom: 80px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    margin-top: 0px;
+    min-height: 500px;
+}
+.wrong {
+    text-align: center;
+    color: red;
+    padding-bottom: 80px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 700;
+}
+#message {
+    padding-top: 200px;
+    padding-bottom: 80px;
+}
+#back {
+    /* text-align: left; */
+    font-size: 14px;
+    font-weight: 100;
+    color: #272626;
 }
 #naslov {
     text-align: center;
@@ -70,79 +52,7 @@ html {
     font-size: 36px;
     font-weight: 700;
 }
-#storitev-1 {
-    position: relative;
-    margin: 0 auto;
-    padding: 10px;
-    border: solid 1px #18314a;
-}
-#storitev-1 p {
-    top: 64px;
-    width: 95%;
-}
-.storitev-naslov {
-    margin: 0 auto;
-    height: 60px;
-    color: #18314a;
-    font-size: 2em;
-    font-weight: 700;
-    text-align: center;
-}
-.center {
-    margin: 0 auto;
-}
-input,
-select {
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 5px;
-}
-#poslji {
-    margin-top: 30px;
-}
-
-#accordionExample {
-    flex: 1 1 auto;
-    padding: 1.25rem;
-}
-
-#noga img {
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-#kontakt {
-    display: inline;
-    float: left;
-}
-#kontakt p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5em;
-}
-#sitemap {
-    display: inline;
-    float: right;
-}
-#sitemap a {
-    color: #abb2be;
-}
-#sitemap p {
-    margin: 0;
-    padding: 0;
-    line-height: 1.5em;
-}
-#center.col-lg-6,
-#narocilo {
-    margin-bottom: 30px;
-}
-@media only screen and (max-width: 992px) {
-    #center.col-lg-6,
-    #delavnik.col-lg-6,
-    #narocilo {
-        margin-top: 60px;
-        margin-bottom: 30px;
-    }
-
+#prestolnica {
+    max-width: 100%;
+    width: auto;
 }

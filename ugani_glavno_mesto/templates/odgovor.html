@@ -4,14 +4,14 @@
 
 {% block specifika %}
     <div class="container-fluid" id="ponudba">
-        <div class="container">
+        <div class="{{ class_from_main }}">
             <div class="row">
-                <div class="col-12" id="naslov">
+                <div class="col-12" id="message">
                     {{ message }}
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12" id="back">
                     <a href="/">Nazaj <<</a>
                 </div>
             </div>
