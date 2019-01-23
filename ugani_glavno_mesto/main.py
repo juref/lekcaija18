@@ -11,6 +11,14 @@ import webapp2
 template_dir = os.path.join(os.path.dirname(__file__), "templates")
 jinja_env = jinja2.Environment(loader=jinja2.FileSystemLoader(template_dir), autoescape=False)
 
+country_capital_dict = {"Slovenija": "Ljubljana", "Hrvaska": "Zagreb", "Avstrija": "Dunaj", "Italija": "Rim"}
+
+random_num = random.randint(0, 3)
+drzava = country_capital_dict.keys()[random_num]
+mesto = country_capital_dict.get(drzava)
+
+drzava_in = {"drzava": drzava}
+
 
 class BaseHandler(webapp2.RequestHandler):
 
@@ -29,15 +37,6 @@ class BaseHandler(webapp2.RequestHandler):
             params = {}
         template = jinja_env.get_template(view_filename)
         return self.response.out.write(template.render(params))
-
-
-country_capital_dict = {"Slovenija": "Ljubljana", "Hrvaska": "Zagreb", "Avstrija": "Dunaj"}
-
-random_num = random.randint(0, 2)
-drzava = country_capital_dict.keys()[random_num]
-mesto = country_capital_dict.get(drzava)
-
-drzava_in = {"drzava": drzava}
 
 
 class MainHandler(BaseHandler):
